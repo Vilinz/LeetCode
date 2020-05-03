@@ -1,9 +1,12 @@
 #include <iostream>
+#include <string>
+#include <cstring>
 using namespace std;
 
 int main() {
   int a = 9;
-  void *pv = &a;
-  cout << *(int*)pv << endl;
+  char* c = "hello";
+  string s = c;
+  cout << strlen(c) << endl;
   return 0;
 }
