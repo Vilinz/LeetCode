@@ -17,7 +17,7 @@ public:
         }
       } else {
         if((middle - 1) * middle/2 < n) {
-          return middle;
+          return middle - 1;
         }  else {
           right = middle - 1;
         }

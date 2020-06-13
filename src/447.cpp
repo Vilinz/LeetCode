@@ -9,7 +9,7 @@ public:
     for(int i = 0; i < points.size(); i++) {
       for(int j = i + 1; j < points.size(); j++) {
         int dis = pow(points[i][0] - points[j][0], 2) + pow(points[i][1] - points[j][1] , 2);
-        res += m[i][dis] * 2 + m[j][dis];
+        res += m[i][dis] * 2 + m[j][dis] * 2;
         m[i][dis]++;
         m[j][dis]++;
       }

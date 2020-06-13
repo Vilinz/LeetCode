@@ -19,6 +19,14 @@ public:
     if(count >= 2) {
       same.push_back(count);
     }
+
+    int total = 1;
+    for(int i = 0; i < same.size(); i++) {
+      total *= pow(2, same[i]);
+    }
+
+    
+
     for(auto a : same) {
       cout << a << endl;
     }

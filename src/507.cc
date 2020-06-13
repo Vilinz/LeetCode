@@ -11,7 +11,7 @@ public:
         res += num / i;
       }
     }
-    return res == num;
+    return res == num && num != 1;
   }
 };
 

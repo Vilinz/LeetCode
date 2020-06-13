@@ -3,14 +3,14 @@
 
 class Solution {
 public:
-  int maxSubArray(vector<int>& nums) {
-    int result = nums[0], curr = 0;
-    for(auto i : nums) {
-      curr = max(curr + i, i);
-      result = max(result, curr);
+    int maxSubArray(vector<int>& nums) {
+        int res = 0, curr = 0;
+        for (auto &i : nums) {
+            curr = max(curr + i, i);
+            res = max(res, curr);
+        }
+        return res;
     }
-    return result;
-  }
 };
 
 int main() {
