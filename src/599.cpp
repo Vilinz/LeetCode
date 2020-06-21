@@ -20,6 +20,7 @@ public:
                 } else if (temp < minSum) {
                     res.clear();
                     res.push_back(list2[i]);
+                    minSum = temp;
                 }
             }
         }
